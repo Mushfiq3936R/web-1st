@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  
+  <style type="text/css" media="all">
+    *{
+      margin: 0;
+      padding: 0;
+      
+    }
+    
+    body{
+      width: 100vw;
+      height: 100vh;
+      background: black;
+      display: grid;
+      place-items: center;
+    } 
+    
+    .container{
+      width: 250px;
+      height: 250px;
+      box-shadow: 0px 0px 10px 3px white;
+      border-radius: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+    }
+    
+    .box{
+      width: 13%;
+      height: 55%;
+      border: 2px solid white;
+      margin: auto 5px;
+      border-radius: 50px;
+      background: white;
+      animation: loding  2s linear infinite;
+      animation-delay: calc(var(--m)*.4s);
+      }
+      @keyframes loding{
+        50%{
+          height:13%;
+        }
+      }
+  
+  </style>
+  
+  <div class="container">
+    <div class="box"style="--m:1"></div>
+    <div class="box"style="--m:2"></div>
+    <div class="box"style="--m:3"></div>
+    <div class="box"style="--m:4"></div>
+    
+  </div>
+</body>
+</html>
